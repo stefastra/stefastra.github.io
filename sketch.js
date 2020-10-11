@@ -1,5 +1,5 @@
 function setup() {
-  createCanvas(displayWidth, displayHeight,WEBGL);
+  createCanvas(displayWidth-10, displayHeight-20,WEBGL);
 }
 
 function draw() {
@@ -11,5 +11,5 @@ function draw() {
   } else {
     fill(255);
   }
-  torus(mouseX, mouseY, 80, 80);
+  torus(260, 340, 2, 80);
 }

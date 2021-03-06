@@ -1,15 +1,14 @@
 function setup() {
-  createCanvas(displayWidth-10, displayHeight-20,WEBGL);
+  createCanvas(displayWidth-250, displayHeight-400,WEBGL);
 }
 
 function draw() {
-  background('sienna');
-  rotateX(frameCount * 0.01);
-  rotateY(frameCount * 0.01);
+  background('#262626');
+  stroke(666);
+    line(mouseX-850, mouseY-345, pmouseX-950, pmouseY-345);
     if (mouseIsPressed) {
-    fill(0);
+    line(mouseY-345, mouseX-850, pmouseY-345, pmouseX-950);
   } else {
-    fill(255);
+    stroke(255);
   }
-  torus(260, 340, 2, 80);
 }
